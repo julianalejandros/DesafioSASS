@@ -1,0 +1,34 @@
+header h1 {
+  color: #032149;
+  text-align: center;
+  margin-top: 15px; }
+
+main h2 {
+  color: #EEEEEE;
+  margin-top: 15px; }
+
+main p {
+  color: white;
+  margin-top: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+
+footer {
+  height: 500px;
+  width: 100%;
+  background-image: url("../imagenes/footer.png");
+  background-size: cover;
+  margin-top: 50px; }
+  footer h3 {
+    color: #B22D00;
+    text-align: center;
+    padding-top: 200px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #73B9FF;
+  width: 90%;
+  margin: 0 auto; }

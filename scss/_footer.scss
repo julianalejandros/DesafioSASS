@@ -1,0 +1,13 @@
+footer{
+    height: 500px;
+    width: 100%;
+    background-image: url("../imagenes/footer.png");
+    background-size: cover; 
+    margin-top: 50px;
+
+        h3{
+        color: $color_h3;
+        text-align: center;
+        padding-top: 200px;
+        }
+}
