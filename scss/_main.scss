@@ -1,3 +1,16 @@
+$titulos:(
+1:black,
+2:blue,
+3:pink,
+4:green,
+);
+
+$color1: map-get($titulos, 1);
+$color2: map-get($titulos, 2);
+$color3: map-get($titulos, 3);
+$color4: map-get($titulos, 4);
+
+
 main{
     h2{
         color: $color_h2;
@@ -6,7 +19,73 @@ main{
    
     p{
         color: white;
-        margin-top: 100px;
+        margin-top: 5px;
         font-family: $fuente;
     }
+
+
+    .texto{ 
+        .titulos{
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            margin: 25px;
+        }
+        .titulo1{
+            @extend .titulos;
+            color: $color1;
+        }
+        .titulo2{
+            @extend .titulos;
+            color: $color2; 
+        }
+        .titulo3{
+            @extend .titulos;
+            color: $color3;
+        }
+        .titulo4{
+            @extend .titulos;
+            color: $color4;
+        }
+    }
+
+
+    @mixin estiloCaja ($parametro) {
+        background-color: $parametro;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+    }
+
+    .parrafo{
+        color: rgb(218, 234, 236);
+        margin-top: 10px;
+        font-family: $fuente;
+
+        
+    }
+
+    .caja1{
+        @include estiloCaja ($bg_Color_Caja1);
+        @extend .parrafo;
+    }
+
+    .caja2{
+        @include estiloCaja ($bg_Color_Caja2);
+        @extend .parrafo;
+    }
+
+    .caja3{
+        @include estiloCaja ($bg_Color_Caja3);
+        @extend .parrafo;
+    }
+
+    .caja4{
+        @include estiloCaja ($bg_Color_Caja4);
+        @extend .parrafo;
+    }
+
 }

@@ -9,8 +9,63 @@ main h2 {
 
 main p {
   color: white;
-  margin-top: 100px;
+  margin-top: 5px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+
+main .texto .titulos, main .texto .titulo1, main .texto .titulo2, main .texto .titulo3, main .texto .titulo4 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin: 25px; }
+
+main .texto .titulo1 {
+  color: black; }
+
+main .texto .titulo2 {
+  color: blue; }
+
+main .texto .titulo3 {
+  color: pink; }
+
+main .texto .titulo4 {
+  color: green; }
+
+main .parrafo, main .caja1, main .caja2, main .caja3, main .caja4 {
+  color: #daeaec;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+
+main .caja1 {
+  background-color: green;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .caja2 {
+  background-color: #d70da1;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .caja3 {
+  background-color: #7f0eea;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .caja4 {
+  background-color: #fa9506;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 footer {
   height: 500px;
